@@ -5,8 +5,9 @@
 # DBT_CLOUD_API_KEY - Your dbt cloud API key
 # DBT_ACCOUNT_ID - Your dbt Cloud account id
 # DBT_JOB_ID - Your dbt Cloud job id
+# DBT_SUB_DIR - The subdirectory of your dbt project from the repo root. Leave blank if your dbt project is at the top
 
-if [ -z "$DBT_ARTIFACT_STATE_PATH" -o -z "$DBT_CLOUD_API_KEY" -o -z "$DBT_ACCOUNT_ID" -o -z "$DBT_JOB_ID" -o -z "$DBT_SUB_DIR" ]; then
+if [ -z "$DBT_ARTIFACT_STATE_PATH" -o -z "$DBT_CLOUD_API_KEY" -o -z "$DBT_ACCOUNT_ID" -o -z "$DBT_JOB_ID" ]; then
     echo "Required environment variables are missing"
     exit 1
 fi
