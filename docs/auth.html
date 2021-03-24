@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Uh oh!</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="/fonts/Roboto-Regular-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/MADE-Dillan-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+    <script src="script.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" onload="identityLoaded()"></script>
+  </head>
+
+  <body>
+
+    <header class="nh-header">
+      <a href="/" class="nh-header-link">
+        <img src="https://d33wubrfki0l68.cloudfront.net/15ecf59b59c9d04b88097c6b5d2c7e8a7d1302d0/54df4/img/netlify.svg" alt="Netlify" class="nh-header-logo" width="147" height="40" loading="eager">
+      </a>
+    </header>
+
+    <div class="container">
+      <div class="content">
+        <h1>Uh oh!</h1>
+
+        <main>
+          <p>It looks like you're not authenticated!</p>
+          <p>Keep in mind that the Netlify dbt Documentation is a private site for Netlify employees.</p>
+          <p>Please login using your <code>@netlify.com</code> email address. If you are returning, please log in.</p>
+
+          <div data-netlify-identity-button></div>
+
+          <!-- if this element exists on a page and the login event fires, it will refresh the page -->
+          <div id="netlify-identity-refresh-page"></div>
+        </main>
+      </div>
+    </div>
+
+    <div>
+      <footer class="nh-footer">
+        <a href="https://www.netlify.com/">Netlify</a> &copy; 2021
+
+        <span data-netlify-identity-menu></span>
+      </footer>
+    </div>
+
+  </body>
+
+</html>
