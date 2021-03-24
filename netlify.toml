@@ -1,0 +1,41 @@
+[build]
+  publish = "dbt_databricks/target/"
+  functions = "functions"
+  command = "scripts/get_dbt_prod_artifacts.sh && scripts/copy_html_file.sh"
+
+[build.environment]
+  PYTHON_VERSION = "3.7"
+
+[[redirects]]
+        from = "/auth.html"
+        to = "/auth.html"
+        status = 200
+
+[[redirects]]
+	from = "/script.js"
+        to = "/script.js"
+        status = 200
+
+[[redirects]]
+	from = "/style.css"
+        to = "/style.css"
+        status = 200
+
+[[redirects]]
+        from = "/*"
+        to = "/404.html"
+        status = 404
+        conditions = {Role = ["netlify"]}
+
+[[redirects]]
+        from = "/*"
+        status = 200
+        force = true
+        conditions = {Role = ["netlify"]}
+
+[[redirects]]
+        from = "/*"
+        to = "/auth.html"
+        status = 401
+        force = true
+
