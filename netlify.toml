@@ -1,5 +1,5 @@
 [build]
-  publish = "dbt_databricks/target/"
+  publish = "target/"
   functions = "functions"
   command = "scripts/get_dbt_prod_artifacts.sh && scripts/copy_html_file.sh"
 
