@@ -1,7 +1,7 @@
 [build]
   publish = "target/"
   functions = "functions"
-  command = "scripts/get_dbt_prod_artifacts.sh && scripts/copy_html_file.sh"
+  command = "scripts/get_dbt_prod_artifacts.sh"
 
 [build.environment]
   PYTHON_VERSION = "3.7"
