@@ -1,0 +1,23 @@
+{
+  "name": "netlify-sso-jaffle_shop",
+  "version": "0.0.1",
+  "description": "Capture requirements for Netlify functions for using Netlify Build and SSO",
+  "main": "index.js",
+  "dependencies": {
+    "jws": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netlify/data.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netlify/data/issues"
+  },
+  "homepage": "https://github.com/netlify/data#readme"
+}
